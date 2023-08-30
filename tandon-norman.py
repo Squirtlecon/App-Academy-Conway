@@ -45,3 +45,9 @@ song_data = [
         "tempo": 90,
     },
 ]
+def calculateStats(list, identifier):
+    list = int(list)
+    identifier = identifier.lower()
+    if identifier == 'mean':
+        #do math stuffs here
+        print('stfu red lines')
