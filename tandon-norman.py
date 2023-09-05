@@ -45,6 +45,7 @@ song_data = [
         "tempo": 90,
     },
 ]
+
 def collectData(data):
     dataList = []
     i = 0
@@ -52,3 +53,17 @@ def collectData(data):
         dataList.append(song_data[i][data])
         i += 1
     return dataList
+
+#My Shit Conway
+def calculateStats(list , operation):
+    list.sort()
+    if operation == "Median":
+        mid = len(list)//2
+        median = (list[mid] - list[~mid]) / 2
+        print(list[mid])
+    elif operation == "Mean":
+        print(sum(list)/len(list))
+    elif operation == "Mode":
+        print(statistics.mode(list))
+    else:
+        print(Error)
