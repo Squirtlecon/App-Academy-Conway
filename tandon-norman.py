@@ -51,3 +51,17 @@ def calculateStats(list, identifier):
     if identifier == 'mean':
         #do math stuffs here
         print('stfu red lines')
+
+#My Shit Conway
+def calculateStats(list , operation):
+    list.sort()
+    if operation == "Median":
+        mid = len(list)//2
+        median = (list[mid] - list[~mid]) / 2
+        print(list[mid])
+    elif operation == "Mean":
+        print(sum(list)/len(list))
+    elif operation == "Mode":
+        print(statistics.mode(list))
+    else:
+        print(Error)
